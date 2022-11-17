@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        Array.prototype.toUpperCase=function(){
+            for(let i=0;i<this.length;i++){
+                this[i]=this[i].toUpperCase();
+            }
+        };
+        Array.prototype.toDouble=function(){
+            for(let i=0;i<this.length;i++){
+                this[i]=this[i]*2;
+            }
+        };
+        Array.prototype.toLowerCase=function(){
+            for(let i=0;i<this.length;i++){
+                this[i]=this[i].toLowerCase();
+            }
+        };
+        const arr=['my','name','is','haren'];
+        console.log(arr);
+        arr.toUpperCase();
+        console.log(arr);
+        const arr2=[1,2,3,4,5,6];
+        console.log(arr2);
+        arr2.toDouble();
+        console.log(arr2);
+        const arr3=['My','Name','Is','Sharma'];
+        arr3.toLowerCase();
+        console.log(arr3);
+    </script>
+</body>
+</html>
